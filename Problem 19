@@ -1,0 +1,25 @@
+//Determine the grade of student from the marks obtained (90-100: A, 80-89: B, 70-79: C, 60-69: D, 60<: F)
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int m;
+
+    cout<<"Enter your marks : ";
+    cin>>m;
+
+    if(m>=90)
+     cout<<"\nYour grade is A";
+    else if(m>=80)
+     cout<<"\nYour grade is B";
+    else if(m>=70)
+     cout<<"\nYour grade is C";
+    else if(m>=60)
+     cout<<"\nYour grade is D";
+    else
+    cout<<"\nYour grade is F";
+
+    return 0;    
+}
