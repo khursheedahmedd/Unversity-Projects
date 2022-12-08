@@ -1,0 +1,29 @@
+/*Calculate the pay of an employee based on the hours worked Input include the total working hours in this week and their hourly pay rate. 
+The employee is to be paid their wage for the first 40 hours and time and half (i.e: 50% more) for all hours above 40 (overtime pay).
+ Output the regular/basic pay, Overtime pay and total pay for the week on the screen. If employee work 40 hours or less don’t output 
+ any information about overtime pay.*/
+ 
+ #include<iostream>
+using namespace std;
+int main()
+{
+    int w_h,h_r;
+
+    cout<<"Enter number of hours you worked in this week : ";
+    cin>>w_h;
+    cout<<"\nEnter hour rate : ";
+    cin>>h_r;
+
+    int b_pay = w_h*h_r;
+
+    cout<<"\nBasic pay : "<<b_pay;
+
+    if(w_h>40)
+     {
+        int o_pay = ((b_pay-(40*h_r))*(.5));
+        cout<<"\nOvertime pay : "<<o_pay;
+        cout<<"\nTotal pay : "<<b_pay+o_pay;
+     }
+  
+  return 0;
+}
