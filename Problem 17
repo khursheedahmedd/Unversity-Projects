@@ -1,0 +1,28 @@
+//Take Three numbers from user and determine the largest number.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+
+    cout<<"Enter first number : ";
+    cin>>a;
+    cout<<"\nEnter second number : ";
+    cin>>b;
+    cout<<"\nEnter third number : ";
+    cin>>c;
+
+    if(a>b && a>c)
+     cout<<"\n"<<a<<" is largest number.";
+    else if(b>a && b>c)
+     cout<<"\n"<<b<<" is laegest number.";
+    else if(c>a && c>b)
+     cout<<"\n"<<c<<" is largest number.";
+    else
+     cout<<"\nNumbers are equal."; 
+
+    return 0; 
+      
+}
