@@ -1,0 +1,19 @@
+// Check if the number is greater than 80 say “good” if not say ”Try again”
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter a number : ";
+    cin >> n;
+
+    if (n > 80)
+        cout << "\nGood";
+    else
+        cout << "\nTry again";
+
+    return 0;
+}
