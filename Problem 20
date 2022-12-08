@@ -1,0 +1,19 @@
+//Inpuy a number and tell whether its even or odd.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"Enter a number : ";
+    cin>>n;
+
+    if(n%2==0)
+     cout<<"\nThe number is even.";
+    else 
+     cout<<"\nThe number is odd.";
+
+    return 0;  
+}
