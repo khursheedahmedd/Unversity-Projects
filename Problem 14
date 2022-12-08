@@ -1,0 +1,20 @@
+//Determine the status of a student (pass or fail) given his/her marks in a subject (Where:passing marks=50)
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int m;
+
+    cout<<"\nEnter your marks : ";
+    cin>>m;
+
+    if(m>=50)
+     cout<<"\nPass";
+    else
+     cout<<"\nFail";
+
+     return 0;
+      
+}
