@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c, d;
+
+    cout << "Enter 1st number : ";
+    cin >> a;
+    cout << "\nEnter 2nd number : ";
+    cin >> b;
+    cout << "\nEnter 3rd number : ";
+    cin >> c;
+    cout << "\nEnter 4th number : ";
+    cin >> d;
+
+    cout << "\nSum of these number is : " << a + b + c + d;
+
+    return 0;
+}
