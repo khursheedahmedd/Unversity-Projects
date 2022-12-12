@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    char op;
+
+    cin >> a >> op >> b;
+
+    if (op == '+')
+        cout << "\n"
+             << a << " + " << b << " = " << a + b;
+    else if (op == '-')
+        cout << "\n"
+             << a << " – " << b << " = " << a - b;
+    else if (op == '*')
+        cout << "\n"
+             << a << " * " << b << " = " << a * b;
+    else if (op == '/')
+        cout << "\n"
+             << a << " ÷ " << b << " = " << a / b;
+    else if (op == '%')
+        cout << "\n"
+             << a << " % " << b << " = " << a % b;
+    else
+        cout << "\nInvalid operator.";
+
+    return 0;
+}
