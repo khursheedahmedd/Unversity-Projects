@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "How much numbers you want to enter : ";
+    cin >> n;
+
+    int arr[n];
+    cout << "\nEnter numbers :";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    int t = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            t = t + arr[i];
+        }
+    }
+    cout << "\nSum of odd numbers is : " << t;
+
+    return 0;
+}
