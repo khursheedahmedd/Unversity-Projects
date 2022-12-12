@@ -1,0 +1,24 @@
+// Sum and average of marks of five students taken from user
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c, d, e;
+
+    cout << "Enter marks of 1st student : ";
+    cin >> a;
+    cout << "\nEnter marks of 2nd student : ";
+    cin >> b;
+    cout << "\nEnter marks of 3rd student :  ";
+    cin >> c;
+    cout << "\nEnter marks of 4th student : ";
+    cin >> d;
+    cout << "\nEnter marks of 5th student : ";
+    cin >> e;
+
+    cout << "\nSum of marks : " << a + b + c + d + e;
+    cout << "\nAverage marks : " << (a + b + c + d + e) / 5.0;
+
+    return 0;
+}
