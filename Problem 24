@@ -1,0 +1,24 @@
+//Displaying the average of n numbers taking from user. Where n is also user given number
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"How many numbers you wants to average : ";
+    cin>>n;
+    float a,sum=0;
+    for(int i=1; i<=n; i++)
+    {
+      cout<<"\nEnter number "<<i<<" : ";
+      cin>>a;
+      sum=sum+a;
+    }
+    float avg=sum/n;
+
+    cout<<"\nAverage is = "<<avg;
+
+    return 0;
+}
