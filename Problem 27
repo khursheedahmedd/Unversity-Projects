@@ -1,0 +1,24 @@
+//Take two positive number a and n from user. Calculate and display an. Assume that the
+//power operator or built-in function not available
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,n;
+
+    cout<<"Enter base : ";
+    cin>>a;
+    cout<<"\nEnter exponent : ";
+    cin>>n;
+
+    int r=1;
+    for(int i=1; i<=n; i++)
+    {
+        r=r*a;
+    }
+    cout<<"\n"<<a<<" raise to "<<n<<" is : "<<r;
+
+    return 0;
+}
