@@ -1,0 +1,22 @@
+// Finding the sum of n number taking from user. Where n is also user given number
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"\nHow many numbers you wants to sum : ";
+    cin>>n;
+    int a=0,sum=0;
+    for( int i=1; i<=n; i++)
+    {
+        cout<<"\nEnter number "<<i<<" : ";
+        cin>>a;
+        sum=sum+a;
+    }
+    cout<<"\nSum = "<<sum;
+
+    return 0;
+}
