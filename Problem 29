@@ -1,0 +1,27 @@
+//Take n times number from user and determine that how many positive and negative integers
+//were entered by user
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"\nHow many numbers you wants to enter : ";
+    cin>>n;
+
+    int a,c=0;
+    for(int i=1; i<=n; i++)
+    {
+        cout<<"\nEnter number "<<i<<" : ";
+        cin>>a;
+        if(a>0)
+        {
+         c++;
+        }
+    }
+    cout<<"\nYou enter "<<c<<" positive numbers.";
+
+    return 0;
+}
