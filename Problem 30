@@ -1,0 +1,29 @@
+//Take n time numbers from user and determine both the smallest and the largest numbers
+//entered by user where n is also taken from user.
+
+#include<iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"How many number you wants to enter : ";
+    cin>>n;
+
+    int a,min=INT_MAX,max=INT_MIN; 
+    for(int i=1; i<=n; i++)
+    {
+      cout<<"\nEnter number "<<i<<" : ";
+      cin>>a;  
+      if(a>max)
+        max=a;
+      else if(a<min)
+       min=a;   
+    }
+    cout<<"\nLargest numbers is : "<<max;
+    cout<<"\nSmallest number is : "<<min;
+
+    return 0;
+}
