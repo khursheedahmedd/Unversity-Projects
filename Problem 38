@@ -1,0 +1,29 @@
+//Input a number and determine that it is a 2-digit positive number or not
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,c=0;
+
+    cout<<"Enter a number : ";
+    cin>>n;
+
+    if(n>0)
+    {
+        while(n!=0)
+        {
+            n=n/10;
+            c++;
+        }
+        if(c==2)
+         cout<<"\nThe given number is two digit positive number.";
+        else
+         cout<<"\nThe given number is "<<c<<" digit positive number."; 
+    }
+    else 
+     cout<<"\nThe given number is negative.";
+
+    return 0; 
+}
