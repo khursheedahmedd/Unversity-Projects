@@ -1,0 +1,29 @@
+//Input 2 number from user and find both are even, both are odd, 1 is even, 1 is odd.
+
+#include<iostream>
+using namespace std;;
+
+int main()
+{
+    int n1,n2;
+
+    cout<<"Enter first number : ";
+    cin>>n1;
+    cout<<"\nEnter second number : ";
+    cin>>n2;
+
+    if(n1%2==0)
+    {
+        if(n2%2==0)
+         cout<<"\nBoth number are even.";
+        else
+         cout<<"\n"<<n1<<" is even but "<<n2<<" is odd"; 
+    }
+    else if(n2%2==0)
+     cout<<"\n"<<n2<<" is even but "<<n1<<" is odd.";
+    else
+     cout<<"\nBoth numbers are odd.";
+
+    return 0;  
+     
+}
