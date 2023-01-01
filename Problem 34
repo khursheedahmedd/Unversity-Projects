@@ -1,0 +1,16 @@
+//Find the absolute of an input. Assume that the absolute operator is not given.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"Enter a number : ";
+    cin>>n;
+
+    cout<<"\nAsolute value is : "<<n*((n>0)-(n<0));
+
+    return 0;
+}
