@@ -1,0 +1,25 @@
+//Input 3 number and display how many numbers are odd.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,c=0;
+
+    for(int i=1; i<=3; i++)
+    {
+      cout<<"\nEnter number "<<i<<" : ";
+      cin>>n;
+      if(n%2!=0)
+      {
+        cout<<"\n"<<n<<" is an odd number.";
+        c++;
+      }  
+      else
+       cout<<"\n"<<n<<" is even number.";
+    }
+    cout<<"\nYou entered "<<c<<" odd numbers.";
+
+    return 0;
+}
