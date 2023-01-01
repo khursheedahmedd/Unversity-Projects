@@ -1,0 +1,24 @@
+//Take a positive number from user. Displaying an error message and prompting for input
+//again and again if user enter invalid number (negative or zero).
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout<<"\nEnter a number : ";
+    cin>>n;
+
+    while(n>0)
+    {
+        cout<<"\nYou enter : "<<n;
+
+        cout<<"\nEnter a number : ";
+        cin>>n;
+    }
+    cout<<"\nYou enter : "<<n;
+
+    return 0;
+}
