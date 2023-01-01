@@ -1,0 +1,37 @@
+//Input 3 number and display 2 largest numbers
+
+#include<iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+    int n1,n2,n3;
+
+    cout<<"Enter first number : ";
+    cin>>n1;
+    cout<<"\nEnter second number : ";
+    cin>>n2;
+    cout<<"\nEnter third number : ";
+    cin>>n3;
+
+    if(n1>n2)
+    {
+        if(n3>n2)
+         cout<<"\nTwo largest numbers are "<<n1<<" and "<<n3;
+        else
+         cout<<"\nTwo largest number are "<<n1<<" and "<<n2; 
+    }
+    else if(n2>n3)
+    {
+        if(n3>n1)
+         cout<<"\nTwo largest number are "<<n2<<" and "<<n3;
+        else
+         cout<<"\nTwo largest number are "<<n2<<" and "<<n1;  
+
+    }
+    else
+     cout<<"\nTwo largest numbers are "<<n3<<" and "<<n2;
+
+    return 0;
+}
