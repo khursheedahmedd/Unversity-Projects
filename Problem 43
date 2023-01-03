@@ -1,0 +1,25 @@
+//Multiply a number with sum of its digits
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,r=0,sum=0;
+
+    cout<<"Enter a number : ";
+    cin>>n;
+
+    int a=n;//7097
+
+    while(n!=0)//7097-->709-->70-->7-->0(False)
+    {
+        r=n%10;//7-->9-->0-->7
+        sum=sum+r;//7+9-->16+0-->16+7-->23
+        n=n/10;//709-->70-->7-->0   
+    }
+
+    cout<<"\nThe product of given number with sum of its digits is "<<a*sum;
+
+
+}
