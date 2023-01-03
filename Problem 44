@@ -1,0 +1,20 @@
+//Input 2 numbers and print YES if 1st number is divisible by 2nd
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n1,n2;
+
+    cout<<"Enter first number : ";
+    cin>>n1;
+    cout<<"\nEnter second number : ";
+    cin>>n2;
+
+    if(n1%n2==0)
+     cout<<"\nYES";
+
+    return 0;
+
+}
