@@ -1,0 +1,27 @@
+//Interchange (swap) two numbers
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n1,n2,temp=0;
+
+    cout<<"Enter first number : ";
+    cin>>n1;
+    cout<<"\nEnter second number : ";
+    cin>>n2;
+    
+    cout<<"\nThe value of first variable before swaping is "<<n1;
+    cout<<"\nThe value of second variable before swaping is "<<n2;
+
+    temp=n1;
+    n1=n2;
+    n2=temp;
+
+   cout<<"\nThe value of first variable after swaping is "<<n1;
+   cout<<"\nThe value of second variable after swaping is "<<n2;
+
+    return 0;
+
+}
