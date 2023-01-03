@@ -1,0 +1,23 @@
+//Input a number (up to 4 digit) and store it reverse in another variable. Then display both integers
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,r=0,num,rev=0;
+
+    cout<<"Enter a 4 or less digit number : ";
+    cin>>n;
+    num=n;
+
+    while(n!=0)
+    {
+      r=n%10;
+      rev=(rev*10)+r;
+      n=n/10;
+    }
+    cout<<"\nThe number you entered is : "<<num;
+    cout<<"\nThe number in reverse order is : "<<rev;
+
+}
