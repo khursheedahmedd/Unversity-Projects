@@ -1,0 +1,33 @@
+//Input number till user enter zero and display the smallest number
+//a. Check if it works for all positive numbers
+//b. Now check algorithm # 49(largest number) if it works for all negative inputs
+//c. If you find any problem then resolve
+
+#include<iostream>
+#include<climits>
+using namespace std;
+
+int main()
+{
+      //FOR SMALLEST NUMBER
+    int n,min=INT_MAX,max=INT_MIN;
+
+    while(n!=0)
+    {
+        cout<<"\nEnter a number : ";
+        cin>>n;
+        
+        if(n==0)
+        break;
+
+        if(n<min)
+         min=n;
+        else if(n>max)
+         max=n; 
+
+    }
+    cout<<"\nSamallest number is : "<<min;
+    cout<<"\nLargest number is : "<<max;
+
+    return 0;
+}
