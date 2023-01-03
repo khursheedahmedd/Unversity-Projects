@@ -1,0 +1,27 @@
+//Interchange two number without using extra variable
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n1,n2;
+
+    cout<<"Enter first number : ";
+    cin>>n1;//3
+    cout<<"\nEnter second number : ";
+    cin>>n2;//7
+
+    cout<<"\nThe value of first variable before swapping is "<<n1;
+    cout<<"\nThe value of second variable before swapping is "<<n2;
+
+    n1=n1+n2;//10
+    n2=n1-n2;//3
+    n1=n1-n2;//7
+
+    cout<<"\nThe value of first variable after swapping is "<<n1;
+    cout<<"\nThe value of second variable after swapping is "<<n2;
+
+    return 0;
+
+}
