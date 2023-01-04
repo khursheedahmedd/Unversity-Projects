@@ -1,0 +1,27 @@
+//Input a number and display that how many digits it has.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,c=0;
+    bool check=false;
+
+    cout<<"Enter a  number : ";
+    cin>>n;
+
+    while(n!=0)
+    {
+      n/=10;
+      c++;
+      check=true;
+    }
+    if(check)
+    cout<<"\nThe given number has "<<c<<" digits.";
+    else
+      cout<<"\nThe given number has 1 digit";
+
+
+    return 0;   
+}   
