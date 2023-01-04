@@ -1,0 +1,24 @@
+//Input SLimit and Elimit from user and display only those numbers between range which are
+//divisible by 2, 3, 5 with both limits included.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int slimit,elimit;
+
+    cout<<"Enter starting number : ";
+    cin>>slimit;
+    cout<<"\nEnter ending number : ";
+    cin>>elimit;
+    
+    cout<<"\nRequired numbers are : ";
+    for(int i=slimit; i<=elimit; i++)
+    {
+        if(i%2==0 || i%3==0 || i%5==0)
+         cout<<i<<" ";
+    }
+
+    return 0;
+}
