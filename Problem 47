@@ -9,7 +9,6 @@ using namespace std;
 
 int main()
 {
-      //FOR SMALLEST NUMBER
     int n,min=INT_MAX,max=INT_MIN;
 
     while(n!=0)
