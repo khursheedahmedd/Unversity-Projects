@@ -1,0 +1,24 @@
+//Input SLimit and Elimit from user and display even numbers between range with both limits included.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int slimit,elimit;
+
+    cout<<"Enter starting number : ";
+    cin>>slimit;
+    cout<<"\nEnter ending number : ";
+    cin>>elimit;
+    
+    cout<<"\nEven numbers between this range are : ";
+    for(int i=slimit; i<=elimit; i++)
+    {
+        if(i%2==0)
+         cout<<i<<" ";
+    }
+
+    return 0;
+
+}
