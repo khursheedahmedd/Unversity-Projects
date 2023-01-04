@@ -1,0 +1,27 @@
+//Input two positive integers a and b from the user. Determine the integer of a/b.
+//Assume that the division operator is not available.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n1,n2,q=0,rem=0;
+
+    cout<<"Enter first number : ";
+    cin>>n1;
+    cout<<"\nEnter second number : ";
+    cin>>n2;
+
+    
+    for(rem = n1 - n2; rem >= 0; rem = rem-n2) 
+    {
+
+        if(rem < 0)                        
+          break;
+        else
+        q++;
+   }
+
+   cout<<n1<<" / "<<n2<<" is : "<<q;
+}
