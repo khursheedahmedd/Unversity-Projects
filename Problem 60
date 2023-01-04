@@ -1,0 +1,50 @@
+//Three numbers denoted by variables A, B and C are supplied as input data. Print these three
+//number in ascending order using control structures.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    int m;
+    int h;
+    int f;
+
+    cout<<"Enter first number : ";              
+    cin>>a;
+    cout<<"\nEnter second number : ";
+    cin>>b;
+    cout<<"\nEnter third number : ";
+    cin>>c;
+
+    if(a>b) 
+    {   
+      m=a;    
+      f=b;   
+   }
+   else 
+   {
+      m=b;  
+      f=a;  
+   } 
+   if(m>c) 
+   { 
+      h=m;    
+      if(f>c)
+      {         
+         m=f;                
+         f=c;
+      }
+      else 
+      {
+         m=c;      
+      }         
+   }
+   else h=c;
+
+   cout<<"\nNumbers in ascending order are : "<<f<<" "<<m<<" "<<h;
+
+   return 0;
+       
+}
