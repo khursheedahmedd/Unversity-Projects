@@ -14,9 +14,10 @@ int main()
 
     if(a>b)
      cout<<"\n"<<a<<" is largest number.";
-    else
+    else if(b>a)
      cout<<"\n"<<b<<" is largest number.";
-
+    else 
+      cout<<"\nThe number are equal.";
 
     return 0;  
 }
