@@ -11,17 +11,20 @@ int main()
     cout<<"\nHow many numbers you wants to enter : ";
     cin>>n;
 
-    int a,c=0;
+    int a,p=0,neq=0;
     for(int i=1; i<=n; i++)
     {
         cout<<"\nEnter number "<<i<<" : ";
         cin>>a;
         if(a>0)
         {
-         c++;
+         p++;
         }
+        else
+         neg++;
     }
     cout<<"\nYou enter "<<c<<" positive numbers.";
+    cout<<"\nYou enter "<<neg<<" negative numbers.";
 
     return 0;
 }
