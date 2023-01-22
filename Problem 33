@@ -8,17 +8,17 @@ int main()
 {
     int n;
 
-    cout<<"\nEnter a number : ";
+    cout<<"Enter a number : ";
     cin>>n;
 
-    while(n>0)
-    {
-        cout<<"\nYou enter : "<<n;
 
-        cout<<"\nEnter a number : ";
+    while(n<=0)
+    {
+        cout<<"\nYou entered invalid number enter a positive number ";
         cin>>n;
     }
-    cout<<"\nYou enter : "<<n;
+
+    cout<<"\nYou enetered : "<<n;
 
     return 0;
-}
+ }
