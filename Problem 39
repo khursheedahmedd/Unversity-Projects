@@ -1,0 +1,28 @@
+//Input 2-digit positive number and find absolute difference between its digits
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,r=0,diff=0;
+
+    cout<<"Enter a 2-digit positive number : ";
+    cin>>n;
+
+    if(n>0)
+    {  
+      r=n%10;
+      n/=10;
+      if(n>=0 && n<=9)
+      {
+      cout<<"\nAbsolute difference between 2-digit given number is : "<<abs(n-r); 
+      }
+      else
+       cout<<"\nInvalid number.";
+    }
+    else
+     cout<<"\nInvalid number.";
+
+    
+}
