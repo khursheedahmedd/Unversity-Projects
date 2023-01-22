@@ -1,0 +1,27 @@
+//Calculate the difference between two times given in 24-hours (hh:mm) format.
+#include <iostream>
+using namespace std;
+
+int main() {
+    string time1, time2;
+    cout << "Enter first time (hh:mm): ";
+    cin >> time1;
+    cout << "Enter second time (hh:mm): ";
+    cin >> time2;
+
+    int hh1 = stoi(time1.substr(0, 2));
+    int mm1 = stoi(time1.substr(3, 2));
+    int hh2 = stoi(time2.substr(0, 2));
+    int mm2 = stoi(time2.substr(3, 2));
+
+    int totalMinutes1 = hh1 * 60 + mm1;
+    int totalMinutes2 = hh2 * 60 + mm2;
+    int differenceInMinutes = abs(totalMinutes1 - totalMinutes2);
+
+    int differenceInHours = differenceInMinutes / 60;
+    int remainingMinutes = differenceInMinutes % 60;
+
+    cout << "Time difference: " << differenceInHours << " hours " << remainingMinutes << " minutes" << endl;
+
+    return 0;
+}
